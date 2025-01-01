@@ -1,23 +1,19 @@
-document.querySelectorAll('.video').forEach(video => {
-    video.addEventListener('click', function() {
-        // Создаём элемент для видео на весь экран
-        let fullscreenContainer = document.createElement('div');
-        fullscreenContainer.classList.add('video-fullscreen');
-        
-        // Создаём копию видео для полноэкранного режима
-        let fullscreenVideo = document.createElement('video');
-        fullscreenVideo.src = video.src;
-        fullscreenVideo.controls = true;
-        fullscreenVideo.autoplay = true;
-        
-        fullscreenContainer.appendChild(fullscreenVideo);
-        
-        // Добавляем контейнер на страницу
-        document.body.appendChild(fullscreenContainer);
+const numSnowflakes = 300; // Количество снежинок
 
-        // Закрытие полноэкранного видео при клике
-        fullscreenContainer.addEventListener('click', function() {
-            document.body.removeChild(fullscreenContainer);
-        });
-    });
-});
+    for (let i = 0; i < numSnowflakes; i++) {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.style.width = `${Math.random() * 10 + 5}px`; // случайный размер
+      snowflake.style.height = snowflake.style.width;
+      snowflake.style.left = `${Math.random() * 100}vw`; // случайная позиция по горизонтали
+      snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // случайная продолжительность анимации
+      snowflake.style.animationDelay = `${Math.random() * 5}s`; // случайная задержка
+
+      document.body.appendChild(snowflake);
+
+      // Для случайного движения снежинок
+      snowflake.style.animationName = 'fall';
+      snowflake.style.animationTimingFunction = 'linear';
+    }
+
+

@@ -10,11 +10,16 @@
     src: url(/font/Plup.ttf);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     * {
         padding: 5px;
         margin: 5px;
         background-color: #111111;
+    }
+
+    body{
+        height: 500vh;
+        width: 100vw;
     }
 
     /* меню */
@@ -24,9 +29,38 @@
         justify-content: space-between;
     }
 
+    .top-menu:before{
+        content: "";
+        position: absolute;
+        background: url(/img/light.png);
+        background-size: cover;
+        height: 100px;
+        width: 1120px;
+        top: 80px;
+        left: 120px;
+    }
+
+    .nav-logo{
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-logo:before{
+        content: "";
+        position: absolute;
+        background: url(/img/шапка2.png);
+        background-size: cover;
+        height: 60px;
+        width: 60px;
+        top: -20px;
+        left: 32px;
+    }
+
     .nav-logo img {
         width: 100px;
         aspect-ratio: 1/1;  
+        border: white 1px solid;
+        border-radius: 10px;
     }
 
     .top-menu a:hover {
@@ -52,10 +86,24 @@
 
     /* о нас */
     .about-us {
+        height: 100vh;
         color: white;
         border-style: double;
+        position: relative;
+        display: inline-block;
     }
 
+    /* .about-us:before{
+        content: "";
+        position: absolute;
+        background: url(/img/снеговик.png);
+        background-repeat: repeat-y;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        top: 10px;
+        left: 10px;
+    } */
     
 
     .banner img {
@@ -315,15 +363,43 @@
     .arnd6 img {
         width: 90%;
     }
+
+    /* canvas {
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    
+      .snowflake {
+        position: absolute;
+        top: -20px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        pointer-events: none;
+        animation: fall linear infinite;
+      }
+    
+      @keyframes fall {
+        0% {
+          transform: translateY(0) scale(1);
+        }
+        100% {
+          transform: translateY(clamp(1000vw, 500vw, 310rem)) scale(0.5);
+        }
+      } */
 }
 
-@media (min-width: 780px) {}
+@media (min-width: 680px) {
+    
+}
 
 
 
 @media (min-width: 360px) {
     body{
         width: 100%;
+        position: relative;
         /* height: 640px; */
     }
     
@@ -588,7 +664,6 @@
     .arnd6 img {
         width: 80%;
     }
-}
 
 footer{
     color: white;
@@ -657,6 +732,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #111111;
     padding: 20px;
+    height: 500vh;
 }
 
 .gallery {
@@ -705,4 +781,93 @@ body {
     width: 90%;
         border-color: white;
         border-style: double;
+}
+
+.body{
+    position: relative;
+}
+
+
+canvas {
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+  .snowflake {
+    position: absolute;
+    top: -20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall linear infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      transform: translateY(500vh) scale(0.5);
+    }
+    
+  }
+
+  .nav-logo{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-logo:before{
+    content: "";
+    position: absolute;
+    background: url(/img/шапка2.png);
+    background-size: cover;
+    aspect-ratio: 1/1;
+    width: 4vw;
+    top: clamp(-10vh, -1vw, 10vh);
+    left: 2.7vw;
+}
+
+.nav-logo img{
+    border: white solid 1px;
+    border-radius: 5%;
+}
+
+.top-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu:before{
+    content: "";
+    position: absolute;
+    background: url(/img/light.png);
+    background-size: cover;
+    height: 6vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.about-us {
+    color: white;
+    border-style: double;
+    position: relative;
+    display: inline-block;
+}
+
+.about-us:before{
+    content: "";
+    position: absolute;
+    background: url(/img/снеговик.png);
+    background-size: cover;
+    width: 10vw;
+    aspect-ratio: 1/1;
+    top: 8vh;
+    left: 10px;
+}
+
 }
