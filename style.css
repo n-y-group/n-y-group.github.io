@@ -152,6 +152,14 @@
         border-style: inset;
     }
 
+    .user3 img{
+        margin-bottom: 7px;
+    }
+
+
+    .user4 img{
+        margin-bottom: 8px;
+    }
     .user1 img,
     .user2 img,
     .user3 img {
@@ -160,7 +168,7 @@
 
     .user4 img {
         width: 90%;
-        height: 55%;
+        height: 62%;
     }
 
     .user1 h1 {
@@ -362,6 +370,10 @@
     .arnd5 img,
     .arnd6 img {
         width: 90%;
+    }
+
+    .arnd2 img{
+        margin-bottom: 30px;
     }
 
     /* canvas {
