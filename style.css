@@ -17,7 +17,7 @@
         background-color: #111111;
     }
 
-    body{
+    body {
         height: 500vh;
         width: 100vw;
     }
@@ -29,36 +29,14 @@
         justify-content: space-between;
     }
 
-    .top-menu:before{
-        content: "";
-        position: absolute;
-        background: url(/img/light.png);
-        background-size: cover;
-        height: 100px;
-        width: 1120px;
-        top: 80px;
-        left: 120px;
-    }
-
-    .nav-logo{
+    .nav-logo {
         position: relative;
         display: inline-block;
     }
 
-    .nav-logo:before{
-        content: "";
-        position: absolute;
-        background: url(/img/шапка2.png);
-        background-size: cover;
-        height: 60px;
-        width: 60px;
-        top: -20px;
-        left: 32px;
-    }
-
     .nav-logo img {
         width: 100px;
-        aspect-ratio: 1/1;  
+        aspect-ratio: 1/1;
         border: white 1px solid;
         border-radius: 10px;
     }
@@ -68,7 +46,7 @@
         color: red;
     }
 
-    .h{
+    .h {
         color: white;
         font-size: clamp(1rem, 2vw, 5rem);
         font-family: 'plup';
@@ -104,7 +82,7 @@
         top: 10px;
         left: 10px;
     } */
-    
+
 
     .banner img {
         width: 40%;
@@ -152,14 +130,15 @@
         border-style: inset;
     }
 
-    .user3 img{
+    .user3 img {
         margin-bottom: 7px;
     }
 
 
-    .user4 img{
+    .user4 img {
         margin-bottom: 8px;
     }
+
     .user1 img,
     .user2 img,
     .user3 img {
@@ -372,7 +351,7 @@
         width: 90%;
     }
 
-    .arnd2 img{
+    .arnd2 img {
         margin-bottom: 30px;
     }
 
@@ -402,24 +381,23 @@
       } */
 }
 
-@media (min-width: 680px) {
-    
-}
+@media (min-width: 680px) {}
 
 
 
 @media (min-width: 360px) {
-    body{
+    body {
         width: 100%;
         position: relative;
         /* height: 640px; */
     }
-    
-    *{
+
+    * {
         padding: 2px;
         margin: 2px;
         background-color: #111111;
     }
+
     header {
         width: 95%;
         display: flex;
@@ -450,7 +428,7 @@
         color: #e2e2e2;
     }
 
-    
+
 
     /* о нас */
     .about-us {
@@ -464,7 +442,7 @@
         height: auto;
     }
 
-    .h{
+    .h {
         color: white;
         font-size: clamp(1rem, 2vw, 5rem);
         font-family: 'plup';
@@ -477,7 +455,7 @@
         margin: 10px auto 20px;
     }
 
-    .about-us p{
+    .about-us p {
         font-size: clamp(1rem, 1.7vw, 1.5rem);
         /* font-size: clamp(5%, 80%, 170%); */
         justify-content: space-between;
@@ -677,209 +655,181 @@
         width: 80%;
     }
 
-footer{
-    color: white;
-    font-family: "Oswald", sans-serif;
-    border-style: double;
-    width: 90%;
-}
-
-.number{
-    justify-content: space-between;
-}
-
-.insta{
-    display: flex;
-}
-
-.mail{
-    display: flex;
-}
-
-.whatsapp{
-    display: flex;
-}
-
-.mail img, .insta img, .whatsapp img{
-    width: clamp(30px, 30px, 40px);
-    aspect-ratio: 1/1;
-}
-
-.insta a{
-    text-decoration: none;
-    text-align: center;
-    font-size: clamp(1rem, 2.5vw, 2rem);
-    color: white;
-}
-
-.whatsapp a{
-    text-decoration: none;
-    text-align: center;
-    font-size: clamp(1rem, 2.5vw, 2rem);
-    color: white;
-}
-
-.mail a{
-    text-decoration: none;
-    text-align: center;
-    font-size: clamp(1rem, 2.5vw, 2rem);
-    color: white;
-}
-
-.foot{
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-
-
-/* Работы */
-/* Сброс стилей */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #111111;
-    padding: 20px;
-    height: 500vh;
-}
-
-.gallery {
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
-
-.video-item {
-    background-color: #111111;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    cursor: pointer;
-    max-width: 300px;
-    position: relative;
-    border-color: white;
+    footer {
+        color: white;
+        font-family: "Oswald", sans-serif;
         border-style: double;
-}
-
-.video-item video {
-    width: 100%;
-    height: auto;
-    max-height: 400px;  /* Ограничение высоты для вертикальных видео */
-    object-fit: contain;  /* Видео сохраняет пропорции */
-}
-
-.video-item p {
-    padding: 10px;
-    font-size: 16px;
-    color: #333;
-    background-color: #f7f7f7;
-}
-
-/* Стиль для мобильных устройств */
-@media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: 1fr;
+        width: 90%;
     }
-}
 
-.work{
-    width: 90%;
+    .number {
+        justify-content: space-between;
+    }
+
+    .insta {
+        display: flex;
+    }
+
+    .mail {
+        display: flex;
+    }
+
+    .whatsapp {
+        display: flex;
+    }
+
+    .mail img,
+    .insta img,
+    .whatsapp img {
+        width: clamp(30px, 30px, 40px);
+        aspect-ratio: 1/1;
+    }
+
+    .insta a {
+        text-decoration: none;
+        text-align: center;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        color: white;
+    }
+
+    .whatsapp a {
+        text-decoration: none;
+        text-align: center;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        color: white;
+    }
+
+    .mail a {
+        text-decoration: none;
+        text-align: center;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        color: white;
+    }
+
+    .foot {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+
+    /* Работы */
+    /* Сброс стилей */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #111111;
+        padding: 20px;
+        height: 100vh;
+    }
+
+    .gallery {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .video-item {
+        background-color: #111111;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        max-width: 300px;
+        position: relative;
         border-color: white;
         border-style: double;
-}
-
-.body{
-    position: relative;
-}
-
-
-canvas {
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-  .snowflake {
-    position: absolute;
-    top: -20px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    pointer-events: none;
-    animation: fall linear infinite;
-  }
-
-  @keyframes fall {
-    0% {
-      transform: translateY(0) scale(1);
     }
-    100% {
-      transform: translateY(500vh) scale(0.5);
+
+    .video-item video {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        /* Ограничение высоты для вертикальных видео */
+        object-fit: contain;
+        /* Видео сохраняет пропорции */
     }
-    
-  }
 
-  .nav-logo{
-    position: relative;
-    display: inline-block;
-}
+    .video-item p {
+        padding: 10px;
+        font-size: 16px;
+        color: #333;
+        background-color: #f7f7f7;
+    }
 
-.nav-logo:before{
-    content: "";
-    position: absolute;
-    background: url(/img/шапка2.png);
-    background-size: cover;
-    aspect-ratio: 1/1;
-    width: 4vw;
-    top: clamp(-10vh, -1vw, 10vh);
-    left: 2.7vw;
-}
+    /* Стиль для мобильных устройств */
+    @media (max-width: 600px) {
+        .gallery {
+            grid-template-columns: 1fr;
+        }
+    }
 
-.nav-logo img{
-    border: white solid 1px;
-    border-radius: 5%;
-}
+    .work {
+        width: 90%;
+        border-color: white;
+        border-style: double;
+    }
 
-.top-menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+    .body {
+        position: relative;
+    }
 
-.top-menu:before{
-    content: "";
-    position: absolute;
-    background: url(/img/light.png);
-    background-size: cover;
-    height: 6vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-}
 
-.about-us {
-    color: white;
-    border-style: double;
-    position: relative;
-    display: inline-block;
-}
+    canvas {
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
 
-.about-us:before{
-    content: "";
-    position: absolute;
-    background: url(/img/снеговик.png);
-    background-size: cover;
-    width: 10vw;
-    aspect-ratio: 1/1;
-    top: 8vh;
-    left: 10px;
-}
+    .snowflake {
+        position: absolute;
+        top: -20px;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        pointer-events: none;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(0) scale(1);
+        }
+
+        100% {
+            transform: translateY(500vh) scale(0.5);
+        }
+
+    }
+
+    .nav-logo {
+        position: relative;
+        display: inline-block;
+    }
+
+    .nav-logo img {
+        border: white solid 1px;
+        border-radius: 5%;
+    }
+
+    .top-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us {
+        color: white;
+        border-style: double;
+        position: relative;
+        display: inline-block;
+    }
 
 }
