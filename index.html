@@ -1,183 +1,178 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="author" content="dj_kirya_pvl">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="/img/n.y.png">
-    <title>N.Y_GROUP_PVL</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N.Y_GROUP_PVL — Организация мероприятий</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- меню -->
-    <header>
-        <nav class="top-menu">
-            <div class="nav-logo">
-                <img src="/img/n.y.png" alt="">
-            </div>
-            <a href="#a1">О нас</a>
-            <a href="#a2">Команда</a>
-            <a href="#a3">Услуги</a>
-            <a href="#a4">Аренда</a>
-            <a href="#a5">Связь с нами</a>
-            <a href="/work.html">Работы</a>
-        </nav>
-    </header>
+  <header>
+    <img src="img/n.y.png" alt="Логотип N.Y_GROUP_PVL" style="max-width: 100px;">
+    <h1>N.Y_GROUP_PVL</h1>
+    <p>Организация и проведение мероприятий</p>
+    <button id="themeToggle">Сменить тему</button>
+  </header>
 
-    <!-- о нас -->
-    <div class="about-us" id="a1">
-        <h1 class="h">МЫ ТВОРЧЕСКАЯ ОРГАНИЗАЦИЯ N.Y_GROUP_PVL</h1>
-        <div class="banner">
-            <img src="/img/n.y.png" alt="">
-        </div>
-        <p>Мы команда профессионалов в сфере организации и проведение мероприятий с 5-летним опытом.В нашей организации
-            работают только профессионалы своего дела (DJ-диджеи, ведущие, фотографы, мобилографы, певицы, дизайнеры,
-            программисты, танцевальный коллектив и т.д.). Наша организацию основал в 2019 году Костя Панасенко (<a href="https://www.instagram.com/dj_kostja_n.y">DJ_KOSTJA_N.Y</a>)</p>
-    </div>
+  <nav>
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#equipment">Аренда</a>
+    <a href="#team">Команда</a>
+    <a href="#contact">Контакты</a>
+    <a href="#order">Заказ</a>
+  </nav>
 
-    <!-- Команда -->
-    <div class="Team" id="a2">
-        <h1 class="h">НАША КОМАНДА</h1>
-        <div class="team">
-            <div class="user1">
-                <img src="/img/ki.jpeg" alt="">
-                <h1>Кирилл Панасенко</h1>
-                <p>Программист, фотограф</p>
-                <button><a href="https://www.instagram.com/dj_kirya_pvl">Связь</a></button>
-            </div>
-            <div class="user2">
-                <img src="/img/kostja.jpeg" alt="">
-                <h1>Костя Панасенко</h1>
-                <p>Основатель, DJ-диджей</p>
-                <button><a href="https://www.instagram.com/dj_kostja_n.y">Связь</a></button>
-            </div>
-            <div class="user3">
-                <img src="/img/aitu.jpeg" alt="">
-                <h1>Айтуар <br><span>Оразов</span></h1>
-                <p>Ведущий, дизайнер</p>
-                <button><a href="https://www.instagram.com/orazov_aituar/">Связь</a></button>
-            </div>
-            <div class="user4">
-                <img src="/img/веду.jpg" alt="">
-                <h1>Ведущий на выбор</h1>
-                <a href="https://wa.me/+77066857182">Подробнее</a>
-            </div>
-        </div>
-    </div>
+  <main>
+    <section class="carousel-container">
+      <div class="carousel">
+        <img src="/img/1.jpeg"
+          class="carousel-image active" alt="event1">
+        <img src="/img/2.jpeg"
+          class="carousel-image" alt="event2">
+        <img src="/img/3.jpeg" class="carousel-image"
+          alt="event3">
+      </div>
+    </section>
 
-    <!-- Услуги -->
-    <div class="service"  id="a3">
-        <h1 class="h">НАШИ УСЛУГИ</h1>
-        <div class="first-srv">
-            <div class="srv1">
-                <img src="/img/ved.png" alt="">
-                <h1>Ведущий</h1>
-                <p>Банкеты, Различные мероприятия</p>
-            </div>
-            <div class="srv2">
-                <img src="/img/диджей.png" alt="">
-                <h1>DJ</h1>
-                <p>Дискотеки, Пати, Музыкальное сопровождение</p>
-            </div>
-            <div class="srv3">
-                <img src="/img/фотограф.jpg" alt="">
-                <h1>Фотограф</h1>
-                <p>Моментальное фото, изготовление фото, обработка фото</p>
-            </div>
-        </div>
-        <div class="two-srv">
-            <div class="srv4">
-                <img src="/img/мобилограф.jpg" alt="">
-                <h1>Мобилограф</h1>
-                <p>Мобилография в различных съемках (Банкеты, соц.ролики и т.д.)</p>
-            </div>
-            <div class="srv5">
-                <img src="/img/певица.jpg" alt="">
-                <h1>Певица</h1>
-                <p>Исполнение различных треков и песен</p>
-            </div>
-            <div class="srv6">
-                <img src="/img/регистр.png" alt="">
-                <h1>Регистратор браков и сопровождение</h1>
-                <p>Выводы и проводы невесты, регистрация браков</p>
-            </div>
-        </div>
-    </div>
+    <section id="about">
+      <h2>О нас</h2>
+      <p>N.Y_GROUP_PVL — творческая организация , основанное Костей Панасенко. Мы организуем и проведем мероприятия и предоставляем полный спектр услуг: DJ, ведущие, фотографы, мобилографы, певицы, дизайнеры, программисты и танцевальные коллективы.</p>
+    </section>
 
-    <!-- Аренда -->
-    <div class="arenda" id="a4">
-        <h1 class="h">АРЕНДА ОТ НАС</h1>
-        <div class="first-arnd">
-            <div class="arnd1">
-                <img src="/img/контроллер.jpg" alt="">
-                <h1>DJ-контроллер</h1>
-                <h1>NUMARK PARTY MIX MKII</h1>
-                <p>Простота подсоединения plug-and-play; 3 светодиодных
-                    излучателя; 2 джога; 2-полосный жквалайзер и регуляторы гейна
-                    на каналах; 4 прорезиненных пэда; Встроенный звуковой интерфейс;
-                    Кнопки синхронизации; Выходы - Master RCA (L/R), выход на наушники
-                </p>
-            </div>
-            <div class="arnd2">
-                <img src="/img/akg-wms.jpg" alt="">
-                <h1>AKG WMS40</h1>
-                <p>Радиосистема беспроводная микрофонная система WMS40 MINI обеспечивает кристально чистый звук и является истинным решениям PLUG'N'PLAY.</p>
-            </div>
-            <div class="arnd3">
-                <img src="/img/baofeng.jpg" alt="">
-                <h1>Портативная радиостанция<br> 
-                    Baofeng BF-888s</h1>
-                <p>РАЦИЯ ПРЕДСТАВЛЯЕТ СОБОЙ КОМПЛЕКТ ИЗ ДВУХ
-                    НАДЕЖНЫХ РАЦИЙ С ЗАРЯДНЫМИ УСТРОЙСТВАМИ.
-                    РАЦИИ ОСНАЩЕНЫ СЪЕМНЫМИ АНТЕННАМИ,
-                    КЛИПСАМИ ДЛЯ КРЕПЛЕНИЯ К ОДЕЖДЕ, РЮКЗАКУ,
-                    РЕМНЮ, ШНУРКАМИ ДЛЯ КРЕПЛЕНИЯ НА ЗАПЯСТЬЕ.
-                    БЛАГОДАРЯ ЭТОМУ КОМПАКТНЫЕ И ЛЕГКИЕ РАЦИИ
-                    УДОБНО НОСИТЬ С СОБОЙ В ЛЮБЫХ УСЛОВИЯХ.</p>
-            </div>
+    <section id="team">
+      <h2>Наша команда</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="/img/kostja.jpeg" alt="">
+          Костя Панасенко — DJ и основатель<br>
+          <button><a href="https://www.instagram.com/dj_kostya_n.y?igsh=MWttb21xdDNyeG50MQ==" target="_blank">Связаться</a></button>
         </div>
-        <div class="two-arnd">
-            <div class="arnd4">
-                <img src="/img/disco.jpg" alt="">
-                <h1>Диско-шар</h1>
-                <p>LED MAGIC BALL LIGHT</p>
-            </div>
-            <div class="arnd5">
-                <img src="/img/strobo.jpg" alt="">
-                <h1>Стробоскоп цветной</h1>
-                <p>Сценическое освещение (Регулятор частоты мигания, Мигание по уровню шума)</p>
-            </div>
-            <div class="arnd6">
-                <img src="/img/lazer1.jpg" alt="">
-                <h1>Лазерный проектор</h1>
-                <p>Мини LED, регулятор скорости, также охват помещение</p>
-            </div>
+        <div class="card">
+          <img src="/img/ki.jpeg" alt="">
+          Кирилл Панасенко — программист и фотограф<br>
+          <button><a href="https://www.instagram.com/dj_kirya_pvl" target="_blank">Связаться</a></button>
         </div>
-    </div>
+        <div class="card">
+          <img src="/img/aitu.jpeg" alt="">
+          Айтуар Оразов — ведущий и дизайнер<br>
+          <button><a href="https://www.instagram.com/orazov_aituar_showman?igsh=Znczc3JsNHFscTln" target="_blank">Связаться</a></button>
+        </div>
+        <div class="card">
+          <img src="/img/zaur.jpg" alt="">
+          Совет Заур — ведущий и мобилограф<br>
+          <button><a href="https://www.instagram.com/s_zaur_n_?igsh=dzFpbnZzbHIxd25v" target="_blank">Связаться</a></button>
+        </div>
+        <div class="card">
+          <img src="/img/asem.jpg" alt="">
+          Мекебаева Асемгуль — ведущая и певица<br>
+          <button><a href="https://www.instagram.com/asemgulmekebaeva?igsh=NWVlb24yMjdiM3B1" target="_blank">Связаться</a></button>
+        </div>
+      </div>
+    </section>
 
-    <!-- контакты -->
-    <footer id="a5">
-            <h1 class="h">СВЯЗЬ С НАМИ</h1>
-        
-        <div class="number">
-            <div class="insta">
-                <img src="/img/insta.png" alt="">
-                <a href="https://www.instagram.com/n.y_group_pvl">n.y_group_pvl</a>
-            </div>
-            <div class="whatsapp">
-                <img src="/img/whatsapp.png" alt="">
-                <a href="https://wa.me/+77066857182">+7 706 685 7182</a>
-            </div>
-            <div class="mail">
-                <img src="/img/mail.png" alt="">
-                <a href="mailto:dj_kostja_n_y@mail.ru">n.y_group_pvl@mail.ru</a>
-            </div>
+    <section id="services">
+      <h2>Услуги</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="/img/ved.png" alt="">
+          Ведущий/Тамада
         </div>
-        <div class="foot"><p>©   2019   N.Y_GROUP_PVL</p></div>
-    </footer>
+        <div class="card">
+          <img src="/img/диджей.png " alt="">
+          Диджей (DJ) / Звукооператор
+        </div>
+        <div class="card">
+          <img src="/img/фотограф.jpg" alt="">
+          Фотограф: моментальная съемка и обработка
+        </div>
+        <div class="card">
+          <img src="/img/мобилограф.jpg" alt="">
+          Мобилограф: ролики и съёмка мероприятий
+        </div>
+        <div class="card">
+          <img src="/img/певица.jpg" alt="">
+          Вокалистка / певица (различный репертуар композиций)
+        </div>
+        <div class="card">
+          <img src="/img/регистр.png" alt="">
+          Регистратор браков
+        </div>
+        <div class="card">
+          <img src="/img/вывод.jpg" alt="">
+          Вывод невесты/ Проводы невесты
+        </div>
+        <div class="card">
+          <img src="/img/пригл.jpg" alt="">
+          Изготовление электронных пригласительных
+        </div>
+        <div class="card">
+          <img src="/img/муз.png" alt="">
+          Установка и подключение различного звукового оборудования
+        </div>
+        <div class="card">
+          <img src="/img/программист.jpg" alt="">
+          услуга программистов (создание вашего сайта для бизнеса личного пользование)
+        </div>
+      </div>
+    </section>
+
+    <section id="equipment">
+      <h2>Аренда оборудования</h2>
+      <div class="card-grid">
+        <div class="card">
+          <img src="/img/контроллер.jpg" alt="">
+          DJ-контроллер NUMARK PARTY MIX MKII</div>
+        <div class="card">
+          <img src="/img/akg-wms.jpg" alt="">
+          Микрофонная система AKG WMS40</div>
+        <div class="card">
+          <img src="/img/baofeng.jpg" alt="">
+          Радиостанция Baofeng BF-888s</div>
+        <div class="card">
+          <img src="/img/disco.jpg" alt="">
+          LED диско-шар</div>
+        <div class="card">
+          <img src="/img/strobo.jpg" alt="">
+          Цветной стробоскоп</div>
+        <div class="card">
+          <img src="/img/lazer1.jpg" alt="">
+          Лазерный проектор</div>
+      </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-block">
+      <h2>Контакты</h2>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/n.y_group_pvl" target="_blank">@n.y_group_pvl</a>
+      </p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/77066857182" target="_blank">+7 706 685 7182</a></p>
+      <p><strong>Email:</strong> <a href="mailto:n.y_group_pvl@mail.ru">n.y_group_pvl@mail.ru</a></p>
+    </section>
+
+    <section id="order">
+      <h2>Оставить заявку</h2>
+      <form action="https://formspree.io/f/xdkgpebv" method="POST" class="order-form">
+        <input type="text" name="name" placeholder="ФИ Заказчика" required>
+        <input type="tel" name="phone" placeholder="Номер телефона" required>
+        <input type="text" name="event_type" placeholder="Тип мероприятия" required>
+        <input type="text" name="location" placeholder="Место проведения" required>
+        <input type="number" name="guests" placeholder="Количество гостей" required>
+        <textarea name="message" placeholder="Дополнительная информация"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2019–2025 N.Y_GROUP_PVL. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
